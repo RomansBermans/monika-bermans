@@ -1,0 +1,132 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Variables */
+:root {
+  --primary-color: #333333;
+  --hero-color: #000000;
+  --accent-color: #777777;
+  
+  --primary-font: 'Merriweather', serif;
+  --hero-font: 'Playfair Display', serif;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+html {
+  font-size: 62.5%; /* 10px base for rem calculations */
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.6rem; /* Default 16px */
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--hero-color);
+  font-family: var(--hero-font);
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4.2rem; }
+h3 { font-size: 3.6rem; }
+h4 { font-size: 3rem; }
+h5 { font-size: 2.4rem; }
+h6 { font-size: 1.8rem; }
+
+p {
+  margin-bottom: 2.5rem;
+}
+
+a, .button {
+  font-family: var(--hero-font);
+  font-weight: 600;
+}
+.button {
+  font-size: 1.4rem;
+}
+
+/* Layout */
+section:not(section section) {
+  padding: 10rem; 
+
+  @media (max-width: 1000px) {
+    padding: 6rem; 
+  }
+  @media (max-width: 800px) {
+    padding: 4rem; 
+  }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.column-1 { grid-column: span 1; }
+.column-2 { grid-column: span 2; }
+.column-3 { grid-column: span 3; }
+.column-4 { grid-column: span 4; }
+.column-5 { grid-column: span 5; }
+.column-6 { grid-column: span 6; }
+.column-7 { grid-column: span 7; }
+.column-8 { grid-column: span 8; }
+.column-9 { grid-column: span 9; }
+.column-10 { grid-column: span 10; }
+.column-11 { grid-column: span 11; }
+.column-12 { grid-column: span 12; }
+
+/* Links & Buttons */
+a {
+  color: var(--hero-color);
+  text-decoration: none;
+  &:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: .1rem solid var(--hero-color);
+  border-radius: .4rem;
+  text-transform: uppercase;
+  &:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+/* Miscellaneous */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-background] {
+  background: center/cover no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: overlay;
+}

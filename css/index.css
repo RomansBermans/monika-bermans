@@ -1,0 +1,30 @@
+@import url('base.css');
+
+/* Hero Section */
+.hero {
+  padding-top: 30rem;
+  padding-bottom: 30rem;
+}
+
+/* About Section */
+.about {
+  background-color: #fbf2f2;
+  
+  img {
+    border-radius: 50%;
+  }
+}
+
+/* Work Section */
+.work {
+  background-color: #fafafa;
+}
+
+/* Contact Section */
+.contact {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+
+  background-color: #e9fffa;
+  text-align: center;
+}
