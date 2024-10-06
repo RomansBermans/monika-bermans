@@ -19,7 +19,7 @@
     --container-gap: .5rem;
   }
   @media (max-width: 800px) {
-    --section-padding: 4rem; 
+    --section-padding: 3rem; 
     --container-grid-template-columns: 1fr;
     --container-gap: 0;
   }

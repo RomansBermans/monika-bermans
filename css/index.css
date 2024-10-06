@@ -27,7 +27,7 @@
 
 @media (max-width: 800px) {
   .hero, .contact {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
   }
 }
