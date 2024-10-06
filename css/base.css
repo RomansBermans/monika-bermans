@@ -9,6 +9,20 @@
   
   --primary-font: 'Merriweather', serif;
   --hero-font: 'Playfair Display', serif;
+
+  --section-padding: 10rem; 
+  --container-grid-template-columns: repeat(12, 1fr);
+  --container-gap: 2rem;
+
+  @media (max-width: 1000px) {
+    --section-padding: 7.5rem; 
+    --container-gap: .5rem;
+  }
+  @media (max-width: 800px) {
+    --section-padding: 4rem; 
+    --container-grid-template-columns: 1fr;
+    --container-gap: 0;
+  }
 }
 
 /* Reset */
@@ -61,27 +75,16 @@ a, .button {
 
 /* Layout */
 section:not(section section) {
-  padding: 10rem; 
-
-  @media (max-width: 1000px) {
-    padding: 6rem; 
-  }
-  @media (max-width: 800px) {
-    padding: 4rem; 
-  }
+  padding: var(--section-padding);
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
 
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
+  grid-template-columns: var(--container-grid-template-columns);
+  gap: var(--container-gap);
 }
 
 .column-1 { grid-column: span 1; }
@@ -101,18 +104,15 @@ section:not(section section) {
 a {
   color: var(--hero-color);
   text-decoration: none;
-  &:hover {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-  }
-}
 
-.button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border: .1rem solid var(--hero-color);
-  border-radius: .4rem;
-  text-transform: uppercase;
+  &.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: .1rem solid var(--hero-color);
+    border-radius: .4rem;
+    text-transform: uppercase;
+  }
+
   &:hover {
     color: var(--accent-color);
     border-color: var(--accent-color);

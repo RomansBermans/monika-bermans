@@ -1,12 +1,10 @@
 @import url('base.css');
 
-/* Hero Section */
 .hero {
-  padding-top: 30rem;
-  padding-bottom: 30rem;
+  padding-top: 32rem;
+  padding-bottom: 32rem;
 }
 
-/* About Section */
 .about {
   background-color: #fbf2f2;
   
@@ -15,16 +13,21 @@
   }
 }
 
-/* Work Section */
 .work {
   background-color: #fafafa;
 }
 
-/* Contact Section */
 .contact {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+  padding-top: 24rem;
+  padding-bottom: 24rem;
 
   background-color: #e9fffa;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .hero, .contact {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
 }
