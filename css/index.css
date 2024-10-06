@@ -6,7 +6,7 @@
 }
 
 .about {
-  background-color: #fbf2f2;
+  background-color: #faf7f2;
   
   img {
     border-radius: 50%;
@@ -14,14 +14,14 @@
 }
 
 .work {
-  background-color: #fafafa;
+  background-color: #f4f9fa;
 }
 
 .contact {
   padding-top: 24rem;
   padding-bottom: 24rem;
 
-  background-color: #e9fffa;
+  background-color: #f5f6f9;
   text-align: center;
 }
 
