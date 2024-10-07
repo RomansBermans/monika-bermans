@@ -3,25 +3,26 @@
 .hero {
   padding-top: 32rem;
   padding-bottom: 32rem;
+
+  &[data-background] {
+    background-color: rgba(250, 247, 242, .95);
+  }
 }
 
-.about {
-  background-color: #faf7f2;
-  
+.about {  
   img {
     border-radius: 50%;
   }
 }
 
 .work {
-  background-color: #f4f9fa;
+  background-color: #faf7f2;
 }
 
 .contact {
   padding-top: 24rem;
   padding-bottom: 24rem;
 
-  background-color: #f5f6f9;
   text-align: center;
 }
 
