@@ -1,12 +1,12 @@
 @import url('base.css');
 
 #hero, #contact {
-  min-height: 80vh;
+  min-height: 75vh;
   &[data-background] {
     background-color: rgba(250, 247, 242, 1);
   }
   @media (max-width: 800px) {
-    min-height: 90vh;
+    min-height: 95vh;
   }
 }
 
@@ -26,12 +26,4 @@
 
 #contact {
   text-align: center;
-  @media (min-width: 801px) {
-    ul li {
-      display: inline;
-      &:not(:last-child)::after {
-        content: ' • ';
-      }
-    }
-  }
 }
