@@ -3,9 +3,8 @@
 
 /* Variables */
 :root {
-  --primary-color: #333333;
+  --primary-color: #444444;
   --hero-color: #000000;
-  --accent-color: #666666;
   
   --primary-font: 'Merriweather', serif;
   --hero-font: 'Playfair Display', serif;
@@ -15,11 +14,11 @@
   --container-grid-template-columns: repeat(12, 1fr);
 
   @media (max-width: 1000px) {
-    --section-padding: 6rem;
-    --container-gap: 4rem;
+    --section-padding: 5rem;
+    --container-gap: 3rem;
   }
   @media (max-width: 800px) {
-    --section-padding: 4rem;
+    --section-padding: 2.5rem;
     --container-gap: 0;
     --container-grid-template-columns: 1fr;
   }
@@ -42,7 +41,7 @@ body {
   color: var(--primary-color);
   font-family: var(--primary-font);
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -51,6 +50,7 @@ h1, h2, h3, h4, h5, h6, address {
   color: var(--hero-color);
   font-family: var(--hero-font);
   font-weight: 600;
+  font-size: 1.8rem;
   font-style: normal;
   margin-bottom: 2.5rem;
 }
@@ -68,10 +68,10 @@ p {
 
 a {
   font-weight: 600;
-  color: var(--hero-color);
+  color: var(--primary-color);
   text-decoration: none;
   &:hover {
-    color: var(--accent-color);
+    color: var(--hero-color);
   }
 }
 
