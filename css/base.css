@@ -10,18 +10,21 @@
   --primary-font: 'Merriweather', serif;
   --hero-font: 'Playfair Display', serif;
 
-  --section-padding: 10rem; 
+  --section-padding-v: 10rem;
+  --section-padding-h: 10rem;
+  --container-gap: 6rem;
   --container-grid-template-columns: repeat(12, 1fr);
-  --container-gap: 2rem;
 
   @media (max-width: 1000px) {
-    --section-padding: 7.5rem; 
-    --container-gap: .5rem;
+    --section-padding-v: 6rem;
+    --section-padding-h: 6rem;
+    --container-gap: 4rem;
   }
   @media (max-width: 800px) {
-    --section-padding: 3rem; 
-    --container-grid-template-columns: 1fr;
+    --section-padding-v: 5rem;
+    --section-padding-h: 3rem;
     --container-gap: 0;
+    --container-grid-template-columns: 1fr;
   }
 }
 
@@ -68,23 +71,23 @@ p {
 a, .button {
   font-family: var(--hero-font);
   font-weight: 600;
-}
-.button {
-  font-size: 1.4rem;
+  &.button {
+    font-size: 1.4rem;
+  }
 }
 
 /* Layout */
 section:not(section section) {
-  padding: var(--section-padding);
+  align-content: center;
+  padding: var(--section-padding-v) var(--section-padding-h);
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-
-  grid-template-columns: var(--container-grid-template-columns);
   gap: var(--container-gap);
+  grid-template-columns: var(--container-grid-template-columns);
 }
 
 .column-1 { grid-column: span 1; }
@@ -104,7 +107,6 @@ section:not(section section) {
 a {
   color: var(--hero-color);
   text-decoration: none;
-
   &.button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -112,7 +114,6 @@ a {
     border-radius: .4rem;
     text-transform: uppercase;
   }
-
   &:hover {
     color: var(--accent-color);
     border-color: var(--accent-color);

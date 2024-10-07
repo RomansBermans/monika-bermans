@@ -1,34 +1,32 @@
 @import url('base.css');
 
-.hero {
-  padding-top: 32rem;
-  padding-bottom: 32rem;
-
+#hero {
+  min-height: 75vh;
   &[data-background] {
     background-color: rgba(250, 247, 242, .95);
   }
 }
 
-.about {  
+#about {
   img {
     border-radius: 50%;
   }
 }
 
-.work {
+#work {
   background-color: #faf7f2;
 }
 
-.contact {
-  padding-top: 24rem;
-  padding-bottom: 24rem;
-
+#contact {
+  min-height: 50vh;
   text-align: center;
 }
 
 @media (max-width: 800px) {
-  .hero, .contact {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+  #hero {
+    min-height: 100vh;
+  }
+  #contact {
+    
   }
 }
