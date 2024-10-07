@@ -14,11 +14,11 @@
   --container-grid-template-columns: repeat(12, 1fr);
 
   @media (max-width: 1000px) {
-    --section-padding: 5rem;
-    --container-gap: 3rem;
+    --section-padding: 6rem;
+    --container-gap: 4rem;
   }
   @media (max-width: 800px) {
-    --section-padding: 2.5rem;
+    --section-padding: 3rem;
     --container-gap: 0;
     --container-grid-template-columns: 1fr;
   }
