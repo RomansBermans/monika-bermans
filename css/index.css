@@ -1,9 +1,8 @@
 @import url('base.css');
 
 #hero {
-  min-height: 75vh;
   &[data-background] {
-    background-color: rgba(250, 247, 242, .95);
+    background-color: rgba(250, 247, 242, 1);
   }
 }
 
@@ -18,15 +17,26 @@
 }
 
 #contact {
-  min-height: 50vh;
   text-align: center;
+  &[data-background] {
+    background-color: rgba(250, 247, 242, 1);
+  }
+  ul li {
+    @media (min-width: 801px) {
+      display: inline;
+      &:not(:last-child)::after {
+        content: ' • ';
+      }
+    }
+  }
+}
+
+#hero, #about, #work, #contact {
+  min-height: 50vh;
 }
 
 @media (max-width: 800px) {
-  #hero {
+  #hero, #contact {
     min-height: 100vh;
-  }
-  #contact {
-    
   }
 }
