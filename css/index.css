@@ -6,7 +6,7 @@
     background-color: rgba(250, 247, 242, 1);
   }
   @media (max-width: 800px) {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 }
 
@@ -26,8 +26,8 @@
 
 #contact {
   text-align: center;
-  ul li {
-    @media (min-width: 801px) {
+  @media (min-width: 801px) {
+    ul li {
       display: inline;
       &:not(:last-child)::after {
         content: ' • ';
