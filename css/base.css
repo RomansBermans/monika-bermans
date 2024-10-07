@@ -10,19 +10,16 @@
   --primary-font: 'Merriweather', serif;
   --hero-font: 'Playfair Display', serif;
 
-  --section-padding-v: 10rem;
-  --section-padding-h: 10rem;
+  --section-padding: 10rem;
   --container-gap: 6rem;
   --container-grid-template-columns: repeat(12, 1fr);
 
   @media (max-width: 1000px) {
-    --section-padding-v: 6rem;
-    --section-padding-h: 6rem;
+    --section-padding: 6rem;
     --container-gap: 4rem;
   }
   @media (max-width: 800px) {
-    --section-padding-v: 4rem;
-    --section-padding-h: 2rem;
+    --section-padding: 3rem;
     --container-gap: 0;
     --container-grid-template-columns: 1fr;
   }
@@ -45,7 +42,7 @@ body {
   color: var(--primary-color);
   font-family: var(--primary-font);
   font-weight: 400;
-  font-size: 1.6rem; /* Default 16px */
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 
@@ -57,12 +54,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2.5rem;
 }
 
-h1 { font-size: 5.0rem; @media (max-width: 800px) { font-size: 4.2rem; } }
-h2 { font-size: 4.2rem; @media (max-width: 800px) { font-size: 3.6rem; } }
-h3 { font-size: 3.6rem; @media (max-width: 800px) { font-size: 3.0rem; } }
-h4 { font-size: 3.0rem; @media (max-width: 800px) { font-size: 2.4rem; } }
-h5 { font-size: 2.4rem; @media (max-width: 800px) { font-size: 1.8rem; } }
-h6 { font-size: 1.8rem; @media (max-width: 800px) { font-size: 1.6rem; } }
+h1 { font-size: 5.0rem; @media (max-width: 800px) { font-size: 4.0rem; } }
+h2 { font-size: 4.4rem; @media (max-width: 800px) { font-size: 3.6rem; } }
+h3 { font-size: 3.8rem; @media (max-width: 800px) { font-size: 3.2rem; } }
+h4 { font-size: 3.2rem; @media (max-width: 800px) { font-size: 2.8rem; } }
+h5 { font-size: 2.6rem; @media (max-width: 800px) { font-size: 2.4rem; } }
+h6 { font-size: 2.0rem; @media (max-width: 800px) { font-size: 2.0rem; } }
 
 p {
   margin-bottom: 2.5rem;
@@ -79,7 +76,7 @@ a, .button {
 /* Layout */
 section:not(section section) {
   align-content: center;
-  padding: var(--section-padding-v) var(--section-padding-h);
+  padding: var(--section-padding);
 }
 
 .container {
