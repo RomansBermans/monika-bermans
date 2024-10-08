@@ -4,7 +4,8 @@
 /* Variables */
 :root {
   --primary-color: #333333;
-  --hero-color: #000000;
+  --hero-color: #111111;
+  --accent-color: #777777;
   
   --primary-font: 'Merriweather', serif;
   --hero-font: 'Playfair Display', serif;
@@ -72,7 +73,7 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   &:hover {
-    color: var(--hero-color);
+    color: var(--accent-color);
   }
 }
 
