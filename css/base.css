@@ -46,7 +46,7 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, address {
+h1, h2, h3, h4, h5, h6, address, nav {
   color: var(--hero-color);
   font-family: var(--hero-font);
   font-weight: 600;
@@ -110,6 +110,10 @@ img {
 
 ul {
   list-style-type: none;
+  li {
+    display: inline;
+    margin-right: 2.5rem;
+  }
 }
 
 [data-background] {
