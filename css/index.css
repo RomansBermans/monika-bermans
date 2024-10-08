@@ -29,9 +29,9 @@
 #contact {
   text-align: center;
   &[data-background] {
-    background-size: 80vh;
+    background-size: 40vh;
     @media (max-width: 800px) {
-      background-size: 140vw;
+      background-size: 90vw;
     }
   }
 }
