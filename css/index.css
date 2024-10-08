@@ -16,19 +16,22 @@
   }
 }
 
-#hero, #work, #contact {
+#hero, #contact {
   &[data-background] {
     background-color: rgba(250, 247, 242, 1); /* #faf7f2 */
   }
 }
 
-#work, #contact {
-  &[data-background] {
-    background-size: contain;
-    background-repeat: repeat;
-  }
+#work {
+  background-color: #fafafa;
 }
 
 #contact {
   text-align: center;
+  &[data-background] {
+    background-size: 80vh;
+    @media (max-width: 800px) {
+      background-size: 140vw;
+    }
+  }
 }
