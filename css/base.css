@@ -81,10 +81,15 @@ ul {
   list-style-type: none;
 }
 
-nav ul li {
-  display: inline;
-  &:not(:last-child) {
-    margin-right: var(--text-element-margin);
+nav {
+  position: fixed;
+  top: var(--text-element-margin);
+
+  ul li {
+    display: inline;
+    &:not(:last-child) {
+      margin-right: var(--text-element-margin);
+    }
   }
 }
 
