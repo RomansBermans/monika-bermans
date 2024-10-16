@@ -20,6 +20,11 @@
   &[data-background] {
     background-color: rgba(246, 246, 246, .95);
   }
+  @media (max-width: 800px) {
+    nav ul li {
+      display: block;
+    }
+  }
 }
 #contact {
   &[data-background] {
