@@ -10,20 +10,15 @@
   }
 }
 
-#about {
-  img {
-    border-radius: 50%;
-  }
-}
-
 #hero {
   &[data-background] {
     background-color: rgba(246, 246, 246, .95);
   }
 }
-#contact {
-  &[data-background] {
-    background-color: rgba(246, 246, 246, .9);
+
+#about {
+  img {
+    border-radius: 50%;
   }
 }
 
@@ -34,6 +29,7 @@
 #contact {
   text-align: center;
   &[data-background] {
+    background-color: rgba(246, 246, 246, .9);
     background-size: 40vh;
     @media (max-width: 800px) {
       background-size: 90vw;
