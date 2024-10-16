@@ -6,6 +6,7 @@
   --primary-color: #333333;
   --hero-color: #111111;
   --accent-color: #777777;
+  --background-color: #ffffff;
   
   --primary-font: 'Merriweather', serif;
   --hero-font: 'Playfair Display', serif;
@@ -54,7 +55,6 @@ h1, h2, h3, h4, h5, h6, address, nav {
   font-weight: 600;
   font-size: 1.8rem;
   font-style: normal;
-  margin-bottom: var(--text-element-margin);
 }
 
 h1 { font-size: 5.0rem; @media (max-width: 800px) { font-size: 4.0rem; } }
@@ -64,7 +64,7 @@ h4 { font-size: 3.2rem; @media (max-width: 800px) { font-size: 2.8rem; } }
 h5 { font-size: 2.6rem; @media (max-width: 800px) { font-size: 2.4rem; } }
 h6 { font-size: 2.0rem; @media (max-width: 800px) { font-size: 2.0rem; } }
 
-p {
+h1, h2, h3, h4, h5, h6, address, p {
   margin-bottom: var(--text-element-margin);
 }
 
@@ -83,7 +83,14 @@ ul {
 
 nav {
   position: fixed;
-  top: var(--text-element-margin);
+  z-index: 1000;
+  width: 100%;
+  padding: var(--text-element-margin) var(--section-padding);
+  transition: background 0.3s ease-in-out;
+
+  &.scrolled {
+    background-color: var(--background-color);
+  }
 
   ul li {
     display: inline;
