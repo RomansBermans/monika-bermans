@@ -1,6 +1,6 @@
 @import url('base.css');
 
-#hero, #about, #work, #contact {
+#hero, #about, #approach, #contact {
   min-height: 50vh;
 }
 
@@ -16,13 +16,18 @@
   }
 }
 
-#hero, #contact {
+#hero {
   &[data-background] {
-    background-color: rgba(250, 247, 242, 1); /* #faf7f2 */
+    background-color: rgba(246, 246, 246, .95);
+  }
+}
+#contact {
+  &[data-background] {
+    background-color: rgba(246, 246, 246, .9);
   }
 }
 
-#work {
+#approach {
   background-color: #fafafa;
 }
 
