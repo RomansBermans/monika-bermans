@@ -16,12 +16,13 @@
   --section-padding: 10rem;
   --container-gap: 6rem;
   --container-grid-template-columns: repeat(12, 1fr);
+
   @media (max-width: 1000px) {
     --section-padding: 6rem;
     --container-gap: 4rem;
   }
   @media (max-width: 800px) {
-    --text-element-spacing: 1.25rem;
+    --text-element-spacing: 1rem;
 
     --section-padding: 3rem;
     --container-gap: 0;
@@ -55,17 +56,17 @@ h1, h2, h3, h4, h5, h6, nav, address {
   color: var(--hero-color);
   font-family: var(--hero-font);
   font-weight: 600;
-  font-size: 1.8rem;
   font-style: normal;
 }
 
-h1  { font-size: 5.0rem; @media (max-width: 800px) { font-size: 4.0rem; } }
-h2  { font-size: 4.4rem; @media (max-width: 800px) { font-size: 3.6rem; } }
-h3  { font-size: 3.8rem; @media (max-width: 800px) { font-size: 3.2rem; } }
-h4  { font-size: 3.2rem; @media (max-width: 800px) { font-size: 2.8rem; } }
-h5  { font-size: 2.6rem; @media (max-width: 800px) { font-size: 2.4rem; } }
-h6  { font-size: 2.0rem; @media (max-width: 800px) { font-size: 2.0rem; } }
-nav { font-size: 1.8rem; @media (max-width: 800px) { font-size: 1.6rem; } }
+h1      { font-size: 5.0rem; @media (max-width: 800px) { font-size: 3.8rem; } }
+h2      { font-size: 4.4rem; @media (max-width: 800px) { font-size: 3.4rem; } }
+h3      { font-size: 3.8rem; @media (max-width: 800px) { font-size: 3.0rem; } }
+h4      { font-size: 3.2rem; @media (max-width: 800px) { font-size: 2.6rem; } }
+h5      { font-size: 2.6rem; @media (max-width: 800px) { font-size: 2.2rem; } }
+h6      { font-size: 2.0rem; @media (max-width: 800px) { font-size: 1.8rem; } }
+nav     { font-size: 1.8rem; @media (max-width: 800px) { font-size: 1.6rem; } }
+address { font-size: 1.8rem; @media (max-width: 800px) { font-size: 1.6rem; } }
 
 h1, h2, h3, h4, h5, h6, address, p {
   margin-bottom: var(--text-element-margin);
