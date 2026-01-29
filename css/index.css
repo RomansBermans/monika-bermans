@@ -36,3 +36,12 @@
     }
   }
 }
+.lang {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 13px;
+}
+.lang a {
+  margin-left: 8px;
+}
