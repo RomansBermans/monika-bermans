@@ -1,0 +1,42 @@
+@import url('base.css');
+
+#navigation {
+  img {
+    max-height: 22px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  &.scrolled {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+#hero, #about, #approach, #contact {
+  min-height: 50vh;
+  @media (max-width: 800px) {
+    min-height: 100vh;
+  }
+}
+
+#hero {
+  background-color: var(--background-color);
+}
+
+#about {
+  img {
+    border-radius: 50%;
+  }
+}
+
+#approach {
+  background-color: var(--background-color);
+}
+
+#contact {
+  text-align: center;
+}
